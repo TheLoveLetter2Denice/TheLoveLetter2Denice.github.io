@@ -164,6 +164,8 @@
   .next-arrow{display:inline-block;transition:transform .2s}
   .next-letter-link:hover .next-arrow{transform:translateX(5px)}
   .next-letter-link:focus-visible{outline:3px dashed var(--wine);outline-offset:5px}
+  .letter-footer{position:relative;z-index:3;display:grid;place-items:center;margin:0;padding:48px 20px 140px;min-height:250px}
+  .letter-footer .next-letter-link{font-size:25px;padding:16px 30px;min-height:62px;max-width:100%}
 </style>
 </head>
 <body>
@@ -356,12 +358,13 @@
         <button class="btn" id="sendBack">får jag chans på dig? ♥</button>
         <button class="btn alt" id="again">läs igen ↑</button>
       </div>
-      <div class="next-letter">
-        <a class="btn next-letter-link" href="/whatsnext/" aria-label="Läs nästa brev till Denice"><span aria-hidden="true">💌</span> nästa brev <span class="next-arrow" aria-hidden="true">→</span></a>
-      </div>
+
     </div></div></div>
   </section>
 
+  <footer class="next-letter letter-footer">
+    <a class="btn next-letter-link" href="/whatsnext/" aria-label="Läs nästa brev till Denice"><span aria-hidden="true">💌</span> nästa brev <span class="next-arrow" aria-hidden="true">→</span></a>
+  </footer>
 </main>
 
 <div class="mascot" aria-hidden="true">
